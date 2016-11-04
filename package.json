@@ -19,6 +19,6 @@
     "hexo-generator-json-content": "~2.1.3"
   },
   "scripts": {
-    "deploy": "sudo hexo generate && sudo touch public/CNAME && sudo chmod 777 public/CNAME && echo 'espumitadk.com' >> public/CNAME && sudo hexo deploy"
+    "deploy": "sudo hexo clean && sudo rm -r .deploy_git && sudo hexo generate && sudo touch public/CNAME && sudo chmod 777 public/CNAME && echo 'espumitadk.com' >> public/CNAME && sudo hexo deploy"
   }
 }
